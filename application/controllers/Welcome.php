@@ -21,7 +21,9 @@ class Welcome extends CI_Controller {
         $data['banner'] = "";
 		
 		$this->load->view('user/layout/HeaderUser.php',$data);
-        $this->load->view('user/PageWelcomeAcademic.php');
+		$this->load->view('user/layout/NavbarUser.php');
+		$this->load->view('user/layout/SidebarUser.php');
+        $this->load->view('user/PageWelcome.php');
 		$this->load->view('user/layout/FooterUser.php');
 	}
 

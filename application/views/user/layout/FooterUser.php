@@ -1,43 +1,32 @@
-</div>
-<!--//app-wrapper-->
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>งานวิชาการ โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed Dekpiano by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
 
-<script src="<?=base_url();?>assets/plugins/jquery-3.4.1.min.js"></script>
-<!-- Javascript -->
-<script src="<?=base_url();?>assets/plugins/popper.min.js"></script>
-<script src="<?=base_url();?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="<?=base_url();?>assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="<?=base_url();?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?=base_url();?>assets/vendor/chart.js/chart.min.js"></script>
+  <script src="<?=base_url();?>assets/vendor/echarts/echarts.min.js"></script>
+  <script src="<?=base_url();?>assets/vendor/quill/quill.min.js"></script>
+  <script src="<?=base_url();?>assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="<?=base_url();?>assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="<?=base_url();?>assets/vendor/php-email-form/validate.js"></script>
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    -->
+  <!-- Template Main JS File -->
+  <script src="<?=base_url();?>assets/js/main.js"></script>
 
-<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap5.min.js"></script>
-
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<!-- Page Specific JS -->
-<script src="<?=base_url();?>assets/js/app.js"></script>
-
-<script src="<?=base_url();?>assets/js/CountdownTimer.js?v=16"></script>
-
-<script>
-    $('.TB-roomonline').DataTable({
-        "responsive": true,
-        "order": [[ 2, "asc" ]]
-    });
-</script>
-<?php if($this->session->flashdata('msg') == 'OK'):?>
-<script>
-Swal.fire({
-    icon: '<?=$this->session->flashdata('alert');?>',
-    title: "แจ้งเตือน",
-    html: '<?=$this->session->flashdata('messge');?>',
-    confirmButtonText: "ตกลง",
-});
-</script>
-<?php endif; $this->session->mark_as_temp('msg',20); ?>
 </body>
 
 </html>
